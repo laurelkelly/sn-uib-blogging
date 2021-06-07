@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Public">fcfd078f1036a0109022e77aae7cf81b</applicability>
+        <order>0</order>
+        <screen display_value="Login Default">f4fd078f2336a0103af182a59643c52c</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-14 18:55:05</sys_created_on>
+        <sys_id>f8fd078fc636a01061662b662258911b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_f8fd078fc636a01061662b662258911b</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-14 18:55:05</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+</record_update>

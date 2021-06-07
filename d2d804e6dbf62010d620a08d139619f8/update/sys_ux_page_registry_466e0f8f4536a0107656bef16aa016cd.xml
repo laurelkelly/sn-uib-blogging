@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_page_registry">
+    <sys_ux_page_registry action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_panel>4a6e0f8fbb36a010da0c74511fa85acb</admin_panel>
+        <admin_panel_table>sys_ux_app_config</admin_panel_table>
+        <auth_routes/>
+        <page/>
+        <path>blogging-author</path>
+        <root_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent>
+        <sys_class_name>sys_ux_page_registry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-14 18:57:01</sys_created_on>
+        <sys_id>466e0f8f4536a0107656bef16aa016cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Blogging Author</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_page_registry_466e0f8f4536a0107656bef16aa016cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-14 18:57:01</sys_updated_on>
+        <title>Blogging Author</title>
+    </sys_ux_page_registry>
+</record_update>

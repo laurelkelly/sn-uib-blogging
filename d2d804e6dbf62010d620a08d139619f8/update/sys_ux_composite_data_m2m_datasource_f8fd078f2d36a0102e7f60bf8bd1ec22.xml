@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - Popular Articles">b8fd078f5836a010a55f8abf648f2321</dataset>
+        <datasource display_value="Custom Portal Landing - Popular articles Datasource">fcfd078fb736a0104445320b2316bb21</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-14 18:55:07</sys_created_on>
+        <sys_id>f8fd078f2d36a0102e7f60bf8bd1ec22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_f8fd078f2d36a0102e7f60bf8bd1ec22</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-14 18:55:07</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

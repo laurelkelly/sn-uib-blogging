@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_menu</name>
+        <page display_value="Blogging">64fdc38fdb36a010d620a08d139619f2</page>
+        <required_translations>[{"message":"Blog Home","comment":""},{"message":"Dev Program YouTube","comment":""},{"message":"Menu Item 1.1","comment":""},{"message":"Developer Blog","comment":""},{"message":"Blog Links","comment":""},{"message":"Browse Menu Item 1","comment":""},{"message":"Dev Program Links","comment":""},{"message":"Internal Links","comment":""},{"message":"Menu Item 1.2","comment":""},{"message":"UI Builder Resources","comment":""}]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-14 18:55:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3cfd078f2f36a010effa3480dab5d727</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_menu</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_page_property_3cfd078f2f36a010effa3480dab5d727</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-28 23:01:57</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_snc_blogging.64fdc38fdb36a010d620a08d139619f2.root.chrome_menu</unique_name>
+        <value>[&#13;
+    {&#13;
+        "value":{&#13;
+        "label":{&#13;
+            "translatable":true, &#13;
+            "message":"Blog Home"&#13;
+            },&#13;
+        "type":"route",&#13;
+        "value":{&#13;
+            "route":"landing"&#13;
+        }&#13;
+        }&#13;
+    },&#13;
+    {&#13;
+    "value":{&#13;
+        "label": {&#13;
+            "translatable":true, &#13;
+            "message":"Blog Links"&#13;
+        }&#13;
+    },&#13;
+    "children":{&#13;
+        "items":[&#13;
+            {&#13;
+                "value":{&#13;
+                "label": {&#13;
+                    "translatable":true, &#13;
+                    "message":"Internal Links"&#13;
+                    }&#13;
+                },&#13;
+                "children":{&#13;
+                "action":{&#13;
+                    "label": {&#13;
+                        "translatable":true, &#13;
+                        "message":"Browse Menu Item 1"&#13;
+                        },&#13;
+                    "type":"route",&#13;
+                    "rightIcon":"chevron-right-fill",&#13;
+                    "value":{&#13;
+                        "route":"article",&#13;
+                            "fields":{&#13;
+                            "sysId": "3020c9b1474321009db4b5b08b9a712d"&#13;
+                        }&#13;
+                    }&#13;
+                },&#13;
+                "items":[&#13;
+                    {&#13;
+                        "value":{&#13;
+                            "label":{&#13;
+                            "translatable":true, &#13;
+                            "message":"Menu Item 1.1"&#13;
+                            },&#13;
+                            "type":"route",&#13;
+                            "value":{&#13;
+                            "route":"article",&#13;
+                                "fields":{&#13;
+                                    "sysId": "3020c9b1474321009db4b5b08b9a712d"&#13;
+                            }&#13;
+                            }&#13;
+                        }&#13;
+                    },&#13;
+                    {&#13;
+                        "value":{&#13;
+                            "label":{&#13;
+                            "translatable":true, &#13;
+                            "message":"Menu Item 1.2"&#13;
+                            },&#13;
+                            "type":"route",&#13;
+                            "value":{&#13;
+                            "route":"article",&#13;
+                                "fields":{&#13;
+                                    "sysId": "3020c9b1474321009db4b5b08b9a712d"&#13;
+                            }&#13;
+                            }&#13;
+                        }&#13;
+                    }&#13;
+                ]&#13;
+                }&#13;
+            },&#13;
+            {&#13;
+                "value":{&#13;
+                "label": {&#13;
+                    "translatable":true, &#13;
+                    "message":"Dev Program Links"&#13;
+                    }&#13;
+                },&#13;
+                "children":{&#13;
+                "items":[&#13;
+                    {&#13;
+                        "value":{&#13;
+                            "label": {&#13;
+                                "translatable":true, &#13;
+                                "message":"Developer Blog"&#13;
+                            },&#13;
+                            "type":"external",&#13;
+                            "rightIcon":"open-link-fill",&#13;
+                            "value":{"href": "developer.servicenow.com/blog.do"}&#13;
+                        }&#13;
+                    },&#13;
+                    {&#13;
+                        "value":{&#13;
+                            "label": {&#13;
+                                "translatable":true, &#13;
+                                "message":"Dev Program YouTube"&#13;
+                            },&#13;
+                            "type":"external",&#13;
+                            "rightIcon":"open-link-fill",&#13;
+                            "value":{"href": "youtube.com/channel/UCdXorgCT87YlFRN9n8oJ7_A"}&#13;
+                        }&#13;
+                    }&#13;
+                ]&#13;
+                }&#13;
+            }&#13;
+        ]&#13;
+    }&#13;
+    },&#13;
+    {&#13;
+    "value":{&#13;
+        "label":{&#13;
+            "translatable":true, &#13;
+            "message":"UI Builder Resources"&#13;
+            },&#13;
+        "type":"route",&#13;
+        "value":{&#13;
+            "route":"post",&#13;
+            "fields":{&#13;
+                "sysId": "dbdfc703db76a010d620a08d13961921"&#13;
+            }&#13;
+        }&#13;
+    }&#13;
+    }&#13;
+]</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=3cfd078f2f36a010effa3480dab5d727"/>
+</record_update>

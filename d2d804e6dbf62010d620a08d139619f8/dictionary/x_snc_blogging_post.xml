@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Post" max_length="40" name="x_snc_blogging_post" sizeclass="9" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Author" max_length="32" name="author" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Body" max_length="4000" name="body" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Likes" max_length="40" name="likes" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Planned published date" max_length="40" name="planned_published_date" type="glide_date"/>
+        <element label="Publish date" max_length="40" name="publish_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="draft" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
+                <element inactive_on_update="false" label="Published" sequence="20" value="published"/>
+                <element inactive_on_update="false" label="Retired" sequence="30" value="retired"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="40" value="cancelled"/>
+            </choice>
+        </element>
+        <element display="true" label="Title" max_length="100" name="title" type="string"/>
+        <element label="Featured" max_length="40" name="u_featured" type="boolean"/>
+        <index name="index">
+            <element name="author"/>
+        </index>
+    </element>
+</database>

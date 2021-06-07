@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme">
+    <sys_ux_theme action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Blogging Portal Theme</name>
+        <parent display_value="Default">a309795273230010fd843c78caf6a724</parent>
+        <sys_class_name>sys_ux_theme</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-14 18:55:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>34fd078f6a36a010bdf369b61337c91b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Blogging Portal Theme</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_theme_34fd078f6a36a010bdf369b61337c91b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-28 15:34:14</sys_updated_on>
+        <theme>{&#13;
+    "--now-font-family": "Cabin",&#13;
+    "--now-color--primary-1": "0,119,73",&#13;
+    "--now-color--secondary-1": "0,86,117",&#13;
+    "--now-card--border-radius": "0px"&#13;
+}&#13;
+</theme>
+    </sys_ux_theme>
+</record_update>

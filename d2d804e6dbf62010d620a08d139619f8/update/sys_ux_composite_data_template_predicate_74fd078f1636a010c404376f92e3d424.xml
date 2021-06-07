@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate">
+    <sys_ux_composite_data_template_predicate action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="kb_knowledge">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <custom_condition/>
+        <custom_field_list/>
+        <field_list>short_description,rating,topic,sys_view_count,article_type,category</field_list>
+        <name>Custom Portal Landing - Popular Articles Predicate</name>
+        <order/>
+        <predicate_bundle/>
+        <required_roles/>
+        <sys_class_name>sys_ux_composite_data_template_predicate</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-14 18:55:02</sys_created_on>
+        <sys_id>74fd078f1636a010c404376f92e3d424</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Custom Portal Landing - Popular Articles Predicate</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_74fd078f1636a010c404376f92e3d424</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-14 18:55:02</sys_updated_on>
+        <table>kb_knowledge</table>
+        <ux_template display_value="Custom Portal Landing - Popular Articles">fcfd078fa136a010a05b8f0815c0c123</ux_template>
+    </sys_ux_composite_data_template_predicate>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_datasource">
+    <sys_ux_composite_datasource action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_blogging_post">state=published^EQ<item display_value="Published" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="published"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <encoded_query_script/>
+        <name>Blog posts</name>
+        <sort_by>publish_date</sort_by>
+        <sys_class_name>sys_ux_composite_datasource</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 23:46:12</sys_created_on>
+        <sys_id>f206dd0707543010ec15f66c7c1ed01a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Blog posts</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_composite_datasource_f206dd0707543010ec15f66c7c1ed01a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 23:46:12</sys_updated_on>
+        <table>x_snc_blogging_post</table>
+    </sys_ux_composite_datasource>
+</record_update>

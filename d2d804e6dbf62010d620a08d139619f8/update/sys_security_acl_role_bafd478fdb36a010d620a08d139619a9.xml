@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-03-14 18:55:09</sys_created_on>
+        <sys_id>bafd478fdb36a010d620a08d139619a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>a8fdc38fdb36a010d620a08d139619f2.x_snc_blogging.Author</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_security_acl display_value="a8fdc38fdb36a010d620a08d139619f2">38fd078f0536a0101c6cec1e5d3e792a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_bafd478fdb36a010d620a08d139619a9</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-03-14 18:55:09</sys_updated_on>
+        <sys_user_role display_value="x_snc_blogging.Author" name="x_snc_blogging.Author">372d0b4fdb36a010d620a08d13961996</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

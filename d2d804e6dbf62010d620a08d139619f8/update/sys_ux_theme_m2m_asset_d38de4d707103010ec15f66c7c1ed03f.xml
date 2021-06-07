@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_theme_m2m_asset">
+    <sys_ux_theme_m2m_asset action="INSERT_OR_UPDATE">
+        <asset display_value="cabin-font">a5ad28d707103010ec15f66c7c1ed0e1</asset>
+        <properties>{&#13;
+    "font-style": "normal",&#13;
+    "font-weight": "normal"&#13;
+}</properties>
+        <sys_class_name>sys_ux_theme_m2m_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-28 15:29:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d38de4d707103010ec15f66c7c1ed03f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_theme_m2m_asset_d38de4d707103010ec15f66c7c1ed03f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-28 15:29:44</sys_updated_on>
+        <theme display_value="Blogging Portal Theme">34fd078f6a36a010bdf369b61337c91b</theme>
+    </sys_ux_theme_m2m_asset>
+</record_update>

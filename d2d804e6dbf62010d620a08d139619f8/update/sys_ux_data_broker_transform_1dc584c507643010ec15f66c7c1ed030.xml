@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_blogging.Blog Comments Transform</api_name>
+        <description/>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Blog Comments Transform</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{&#13;
+    "name":"comments",&#13;
+    "label":"Comments Object",&#13;
+    "fieldType":"object",&#13;
+    "mandatory":"true"&#13;
+}]</props>
+        <required_translations>[{"message":"Comments Object","comment":""}]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	var cmtArr = input.comments;
+	var newCmtArr = [];
+	
+	for (i = 0; i < cmtArr.length; i++) {
+		var cmtObj = cmtArr[i];
+		var newCmtObj = {
+			"id": cmtObj.sys_id.value,
+			"created": cmtObj.sys_created_on.displayValue,
+			"text": cmtObj.comment.value,
+			"parent": "",
+			"user": {
+				"name": cmtObj.author.displayValue,
+				"id": cmtObj.author.value,
+				"avatar": ""
+			},
+			"reactionCount": 0,
+			"isReacted": false,
+			"children": []
+		};
+		newCmtArr.push(newCmtObj);
+	}
+	
+	return newCmtArr;
+}	]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-02 23:05:04</sys_created_on>
+        <sys_id>1dc584c507643010ec15f66c7c1ed030</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Blog Comments Transform</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_1dc584c507643010ec15f66c7c1ed030</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-02 23:11:59</sys_updated_on>
+    </sys_ux_data_broker_transform>
+</record_update>

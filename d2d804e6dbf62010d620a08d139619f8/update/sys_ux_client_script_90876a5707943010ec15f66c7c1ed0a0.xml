@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Post">0eedb8d607507010ec15f66c7c1ed09e</macroponent>
+        <name>Add comment</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, helpers, imports}) {
+    const comment = event.payload.content;
+    console.log(`Comment: ${JSON.stringify(comment,null,4)}`);
+    //table where the record is being created
+    const tableName = 'x_snc_blogging_comment';
+    //encoded query with the values you're setting
+    const commentEncQuery = 'author=' + api.context.session.user.sys_id + '^post=' + api.context.props.sysId + '^comment=' + comment;
+    //call the data resource by its name with the execute() function
+    //const commentEncQuery = 'author=' + api.context.session.user.sys_id + '^post=' + api.context.props.sysId + '^comment=' + comment;
+    console.log('Comment query ' + commentEncQuery);
+    api.data.create_record_1.execute({
+        "table": tableName,
+        "templateFields": commentEncQuery,
+        "useSetDisplayValue": false
+    });
+    //api.data.look_up_records_1.refresh();
+    //instead of scripting the refresh, we added a new event handler called REFRESH to the data transform Create Record 1, under Operation Succeeded
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-29 00:19:42</sys_created_on>
+        <sys_id>90876a5707943010ec15f66c7c1ed0a0</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Add comment</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_client_script_90876a5707943010ec15f66c7c1ed0a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-04 23:14:10</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

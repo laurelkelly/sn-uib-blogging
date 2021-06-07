@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <event_name>OPEN_BLOG_POST</event_name>
+        <interfaces/>
+        <label>Open Blog Post</label>
+        <props>[{"name":"blogId","fieldType":"","label":"","interfaceApiName":"","typeMetadata":null,"mandatory":false,"readOnly":false}]</props>
+        <required_translations>[]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-27 23:30:03</sys_created_on>
+        <sys_id>9782ddc707903010ec15f66c7c1ed01e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Blog Post</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_event_9782ddc707903010ec15f66c7c1ed01e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-27 23:30:03</sys_updated_on>
+    </sys_ux_event>
+</record_update>

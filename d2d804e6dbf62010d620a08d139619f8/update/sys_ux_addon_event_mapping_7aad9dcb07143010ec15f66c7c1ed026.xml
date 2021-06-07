@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_addon_event_mapping">
+    <sys_ux_addon_event_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Open blog post</name>
+        <parent_macroponent display_value="Landing Page">f0fd078f0b36a0103dc30f054463332e</parent_macroponent>
+        <source_da display_value="navigation">39db594b07543010ec15f66c7c1ed0b5</source_da>
+        <source_element_id>data_set_1</source_element_id>
+        <sys_class_name>sys_ux_addon_event_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-28 00:18:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7aad9dcb07143010ec15f66c7c1ed026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open blog post</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_ux_addon_event_mapping_7aad9dcb07143010ec15f66c7c1ed026</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-28 00:18:38</sys_updated_on>
+        <target_event display_value="Open Blog Post">9782ddc707903010ec15f66c7c1ed01e</target_event>
+        <target_payload_mapping>{
+  "type": "MAP_CONTAINER",
+  "container": {
+    "blogId": {
+      "type": "EVENT_PAYLOAD_BINDING",
+      "binding": {
+        "address": [
+          "sysId"
+        ]
+      }
+    }
+  }
+}</target_payload_mapping>
+    </sys_ux_addon_event_mapping>
+</record_update>

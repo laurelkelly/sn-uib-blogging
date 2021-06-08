@@ -429,9 +429,9 @@
           "elementLabel" : "Nested comments 1",
           "propertyValues" : {
             "comments" : {
-              "type" : "STATE_BINDING",
+              "type" : "DATA_OUTPUT_BINDING",
               "binding" : {
-                "address" : [ "commentsJSON" ]
+                "address" : [ "blog_comments_transform_1", "output" ]
               }
             },
             "userInformation" : {
@@ -466,6 +466,28 @@
             }
           },
           "eventMappings" : [ {
+            "eventMappingId" : "ckpmwyhhpvaaaaaakddeiidddsbbxffkhhjj",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_nested_comments.SN_NESTED_COMMENTS#REACTION_TOGGLED",
+            "sourceEventDefinition" : {
+              "apiName" : "sn_nested_comments.SN_NESTED_COMMENTS#REACTION_TOGGLED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "3c9eecae07603010ec15f66c7c1ed03f"
+              },
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "ckpmwyhhpvaaaaaalddeiidhzgihwlw",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          }, {
             "eventMappingId" : "ckpjjaaiwwaaaaabbtddeiidkiiwhjjqaaii",
             "isConfiguration" : false,
             "offRowStorageId" : null,
@@ -637,7 +659,7 @@
     },
     "returnFields" : {
       "type" : "JSON_LITERAL",
-      "value" : "sys_id,sys_created_on,comment,author"
+      "value" : "sys_id,sys_created_on,comment,author,likes"
     },
     "orderBy" : {
       "type" : "JSON_LITERAL",
@@ -811,13 +833,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-25 14:04:25</sys_created_on>
         <sys_id>0eedb8d607507010ec15f66c7c1ed09e</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Post</sys_name>
         <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
         <sys_update_name>sys_ux_macroponent_0eedb8d607507010ec15f66c7c1ed09e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-04 21:06:32</sys_updated_on>
+        <sys_updated_on>2021-06-07 18:58:53</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

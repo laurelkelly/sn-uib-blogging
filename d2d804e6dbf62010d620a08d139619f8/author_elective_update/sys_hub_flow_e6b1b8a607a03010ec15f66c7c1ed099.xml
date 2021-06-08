@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-quebec-12-09-2020__patch1-02-18-2021</compiler_build>
+        <copied_from>566b8fcbdb36a010d620a08d139619bc</copied_from>
+        <copied_from_name>Like Count</copied_from_name>
+        <description/>
+        <internal_name>comment_like_count</internal_name>
+        <label_cache>[{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.table_name","label":"6➛Comment Table","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.record","label":"6➛Comment Record","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Table","label":"5➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Records","label":"5➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Records","label":"2➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Table","label":"2➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.post","label":"Trigger➛Like Record➛Post","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"post"},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.record","label":"3➛Post Record","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.table_name","label":"3➛Post Table","reference":"x_snc_blogging_post","reference_display":"Post","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.comment","label":"Trigger➛Like Record➛Comment","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"comment"}]</label_cache>
+        <latest_snapshot>2cc8b42e07a03010ec15f66c7c1ed06c</latest_snapshot>
+        <master_snapshot>2cc8b42e07a03010ec15f66c7c1ed06c</master_snapshot>
+        <name>Comment Like Count</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>206c8f0fdb36a010d620a08d1396190e</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e6b1b8a607a03010ec15f66c7c1ed099</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Comment Like Count</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name>sys_hub_flow_e6b1b8a607a03010ec15f66c7c1ed099</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:10</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=e6b1b8a607a03010ec15f66c7c1ed099"/>
+    <sys_variable_value action="DELETE" query="document_key=e6b1b8a607a03010ec15f66c7c1ed099"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="x_snc_blogging_like">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-14 18:48:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>206c8f0fdb36a010d620a08d1396190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-14 18:48:10</sys_updated_on>
+        <table>x_snc_blogging_like</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"55c8f42e07a03010ec15f66c7c1ed016","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>e6b1b8a607a03010ec15f66c7c1ed099</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:09</sys_created_on>
+        <sys_id>55c8f42e07a03010ec15f66c7c1ed016</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <trigger display_value="">206c8f0fdb36a010d620a08d1396190e</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="DELETE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>55c8f42e07a03010ec15f66c7c1ed016</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:09</sys_created_on>
+        <sys_id>d9c8f42e07a03010ec15f66c7c1ed016</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN55c8f42e07a03010ec15f66c7c1ed016"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INbab1b8a607a03010ec15f66c7c1ed0da"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>bab1b8a607a03010ec15f66c7c1ed0da</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=bab1b8a607a03010ec15f66c7c1ed0da"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>bab1b8a607a03010ec15f66c7c1ed0da</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>3eb1b8a607a03010ec15f66c7c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:24</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>bab1b8a607a03010ec15f66c7c1ed0da</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>b2b1b8a607a03010ec15f66c7c1ed0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:24</sys_updated_on>
+        <value>x_snc_blogging_like</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>bab1b8a607a03010ec15f66c7c1ed0da</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>feb1b8a607a03010ec15f66c7c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:24</sys_updated_on>
+        <value/>
+        <variable display_value="Run flow In">3f1b9e4e0f103300b599bca2ff767e21</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="DELETE" query="id=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INeeb1b8a607a03010ec15f66c7c1ed09b"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>e6b1b8a607a03010ec15f66c7c1ed099</id>
+        <name>Comment Like Count</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:22</sys_created_on>
+        <sys_id>eeb1b8a607a03010ec15f66c7c1ed09b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:22</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN3ab1b8a607a03010ec15f66c7c1ed0a9,a2b1b8a607a03010ec15f66c7c1ed0a2"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</model>
+        <model_id>e6b1b8a607a03010ec15f66c7c1ed099</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>3ab1b8a607a03010ec15f66c7c1ed0a9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</model>
+        <model_id>e6b1b8a607a03010ec15f66c7c1ed099</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>a2b1b8a607a03010ec15f66c7c1ed0a2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN33d778ea07a03010ec15f66c7c1ed00e,36b1b8a607a03010ec15f66c7c1ed0d0,76b1b8a607a03010ec15f66c7c1ed0d8,80e778ea07a03010ec15f66c7c1ed014"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</flow>
+        <order>5</order>
+        <parent_ui_id>5a7b75c0-9984-422c-beb4-8a85e68443ea</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>33d778ea07a03010ec15f66c7c1ed00e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:10</sys_updated_on>
+        <ui_id>74783633-7503-4372-a087-06cc95128f61</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=33d778ea07a03010ec15f66c7c1ed00e"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>33d778ea07a03010ec15f66c7c1ed00e</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>44e778ea07a03010ec15f66c7c1ed010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:14</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=33d778ea07a03010ec15f66c7c1ed00e"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>33d778ea07a03010ec15f66c7c1ed00e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>00e778ea07a03010ec15f66c7c1ed010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>comment={{Created_1.current.comment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>max_results</field>
+        <id>33d778ea07a03010ec15f66c7c1ed00e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>4ce778ea07a03010ec15f66c7c1ed00f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>33d778ea07a03010ec15f66c7c1ed00e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>c0e778ea07a03010ec15f66c7c1ed010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{Created_1.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</flow>
+        <order>2</order>
+        <parent_ui_id>a2031fc7-ca58-4128-8814-67e44dd1160e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>36b1b8a607a03010ec15f66c7c1ed0d0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <ui_id>1a79d44f-bad1-4e50-a83a-522c72eedeb9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=36b1b8a607a03010ec15f66c7c1ed0d0"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>36b1b8a607a03010ec15f66c7c1ed0d0</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>7ab1b8a607a03010ec15f66c7c1ed0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:23</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=36b1b8a607a03010ec15f66c7c1ed0d0"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>36b1b8a607a03010ec15f66c7c1ed0d0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>36b1b8a607a03010ec15f66c7c1ed0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>post={{Created_1.current.post}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>max_results</field>
+        <id>36b1b8a607a03010ec15f66c7c1ed0d0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>fab1b8a607a03010ec15f66c7c1ed0d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>36b1b8a607a03010ec15f66c7c1ed0d0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>f6b1b8a607a03010ec15f66c7c1ed0d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{Created_1.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</flow>
+        <order>3</order>
+        <parent_ui_id>a2031fc7-ca58-4128-8814-67e44dd1160e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>76b1b8a607a03010ec15f66c7c1ed0d8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:10</sys_updated_on>
+        <ui_id>95b4df94-9192-485e-8e47-c20aba86589f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=76b1b8a607a03010ec15f66c7c1ed0d8"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>76b1b8a607a03010ec15f66c7c1ed0d8</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>36b1b8a607a03010ec15f66c7c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:24</sys_updated_on>
+        <value>x_snc_blogging_post</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=76b1b8a607a03010ec15f66c7c1ed0d8"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>76b1b8a607a03010ec15f66c7c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>feb1b8a607a03010ec15f66c7c1ed0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current.post}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>76b1b8a607a03010ec15f66c7c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>3eb1b8a607a03010ec15f66c7c1ed0d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>76b1b8a607a03010ec15f66c7c1ed0d8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:24</sys_created_on>
+        <sys_id>b2b1b8a607a03010ec15f66c7c1ed0da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>likes={{1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</flow>
+        <order>6</order>
+        <parent_ui_id>5a7b75c0-9984-422c-beb4-8a85e68443ea</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>80e778ea07a03010ec15f66c7c1ed014</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:10</sys_updated_on>
+        <ui_id>f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=80e778ea07a03010ec15f66c7c1ed014"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80e778ea07a03010ec15f66c7c1ed014</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>80e778ea07a03010ec15f66c7c1ed016</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:14</sys_updated_on>
+        <value>x_snc_blogging_comment</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>80e778ea07a03010ec15f66c7c1ed014</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>cce778ea07a03010ec15f66c7c1ed015</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:35:50</sys_updated_on>
+        <value/>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=80e778ea07a03010ec15f66c7c1ed014"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>80e778ea07a03010ec15f66c7c1ed014</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>88e778ea07a03010ec15f66c7c1ed015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current.comment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>80e778ea07a03010ec15f66c7c1ed014</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>c4e778ea07a03010ec15f66c7c1ed015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>80e778ea07a03010ec15f66c7c1ed014</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:14</sys_created_on>
+        <sys_id>4ce778ea07a03010ec15f66c7c1ed015</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:35:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>likes={{74783633-7503-4372-a087-06cc95128f61.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE" query="flow=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INb7d738ea07a03010ec15f66c7c1ed0fd,b7d778ea07a03010ec15f66c7c1ed006"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">7bd738ea07a03010ec15f66c7c1ed0fc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:13</sys_created_on>
+        <sys_id>b7d738ea07a03010ec15f66c7c1ed0fd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <ui_id>a2031fc7-ca58-4128-8814-67e44dd1160e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=b7d738ea07a03010ec15f66c7c1ed0fd"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b7d738ea07a03010ec15f66c7c1ed0fd</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:13</sys_created_on>
+        <sys_id>73d778ea07a03010ec15f66c7c1ed002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:13</sys_updated_on>
+        <value>Is this a post</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=b7d738ea07a03010ec15f66c7c1ed0fd"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>b7d738ea07a03010ec15f66c7c1ed0fd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:13</sys_created_on>
+        <sys_id>ffd778ea07a03010ec15f66c7c1ed001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.post}}= </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>condition_name</field>
+        <id>b7d738ea07a03010ec15f66c7c1ed0fd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:13</sys_created_on>
+        <sys_id>3bd778ea07a03010ec15f66c7c1ed001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:32:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">ffd778ea07a03010ec15f66c7c1ed005</block>
+        <comment/>
+        <connected_to>a2031fc7-ca58-4128-8814-67e44dd1160e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:32:13</sys_created_on>
+        <sys_id>b7d778ea07a03010ec15f66c7c1ed006</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:10</sys_updated_on>
+        <ui_id>5a7b75c0-9984-422c-beb4-8a85e68443ea</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=b7d778ea07a03010ec15f66c7c1ed006"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN22b1b8a607a03010ec15f66c7c1ed0a8,3eb1b8a607a03010ec15f66c7c1ed0c6"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>22b1b8a607a03010ec15f66c7c1ed0a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:05:23</sys_created_on>
+        <sys_id>3eb1b8a607a03010ec15f66c7c1ed0c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:05:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INddc8f42e07a03010ec15f66c7c1ed016"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>e6b1b8a607a03010ec15f66c7c1ed099</plan_id>
+        <snapshot>2cc8b42e07a03010ec15f66c7c1ed06c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ddc8f42e07a03010ec15f66c7c1ed016</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <trigger display_value="">206c8f0fdb36a010d620a08d1396190e</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>comment_like_count</internal_name>
+        <label_cache>[{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.table_name","label":"6➛Comment Table","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.record","label":"6➛Comment Record","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Table","label":"5➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Records","label":"5➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Records","label":"2➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Table","label":"2➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.post","label":"Trigger➛Like Record➛Post","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"post"},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.record","label":"3➛Post Record","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.table_name","label":"3➛Post Table","reference":"x_snc_blogging_post","reference_display":"Post","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.comment","label":"Trigger➛Like Record➛Comment","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"comment"}]</label_cache>
+        <master>true</master>
+        <name>Comment Like Count</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Comment Like Count">e6b1b8a607a03010ec15f66c7c1ed099</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2cc8b42e07a03010ec15f66c7c1ed06c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:05</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=2cc8b42e07a03010ec15f66c7c1ed06c"/>
+    <sys_variable_value action="DELETE" query="document_key=2cc8b42e07a03010ec15f66c7c1ed06c"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT INf0c8b42e07a03010ec15f66c7c1ed0dc"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>f0c8b42e07a03010ec15f66c7c1ed0dc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:09</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=f0c8b42e07a03010ec15f66c7c1ed0dc"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f0c8b42e07a03010ec15f66c7c1ed0dc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>70c8b42e07a03010ec15f66c7c1ed0de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <value>x_snc_blogging_like</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f0c8b42e07a03010ec15f66c7c1ed0dc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>bcc8b42e07a03010ec15f66c7c1ed0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <value/>
+        <variable display_value="Run flow In">3f1b9e4e0f103300b599bca2ff767e21</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>f0c8b42e07a03010ec15f66c7c1ed0dc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>f8c8b42e07a03010ec15f66c7c1ed0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="DELETE" query="id=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT INe0c8b42e07a03010ec15f66c7c1ed06e"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>2cc8b42e07a03010ec15f66c7c1ed06c</id>
+        <name>Comment Like Count</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:05</sys_created_on>
+        <sys_id>e0c8b42e07a03010ec15f66c7c1ed06e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT INa8c8b42e07a03010ec15f66c7c1ed06f,e0c8b42e07a03010ec15f66c7c1ed092"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</model>
+        <model_id>2cc8b42e07a03010ec15f66c7c1ed06c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:05</sys_created_on>
+        <sys_id>a8c8b42e07a03010ec15f66c7c1ed06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</model>
+        <model_id>2cc8b42e07a03010ec15f66c7c1ed06c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>e0c8b42e07a03010ec15f66c7c1ed092</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT IN78c8b42e07a03010ec15f66c7c1ed0ad,78c8b42e07a03010ec15f66c7c1ed0cd,7cc8b42e07a03010ec15f66c7c1ed0d4,b4c8b42e07a03010ec15f66c7c1ed0da"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</flow>
+        <order>2</order>
+        <parent_ui_id>a2031fc7-ca58-4128-8814-67e44dd1160e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>78c8b42e07a03010ec15f66c7c1ed0ad</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <ui_id>1a79d44f-bad1-4e50-a83a-522c72eedeb9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=78c8b42e07a03010ec15f66c7c1ed0ad"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>78c8b42e07a03010ec15f66c7c1ed0ad</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>b4c8b42e07a03010ec15f66c7c1ed0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=78c8b42e07a03010ec15f66c7c1ed0ad"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>78c8b42e07a03010ec15f66c7c1ed0ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>70c8b42e07a03010ec15f66c7c1ed0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>post={{Created_1.current.post}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>max_results</field>
+        <id>78c8b42e07a03010ec15f66c7c1ed0ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>bcc8b42e07a03010ec15f66c7c1ed0ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>78c8b42e07a03010ec15f66c7c1ed0ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>34c8b42e07a03010ec15f66c7c1ed0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{Created_1.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</flow>
+        <order>3</order>
+        <parent_ui_id>a2031fc7-ca58-4128-8814-67e44dd1160e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>78c8b42e07a03010ec15f66c7c1ed0cd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <ui_id>95b4df94-9192-485e-8e47-c20aba86589f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=78c8b42e07a03010ec15f66c7c1ed0cd"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>78c8b42e07a03010ec15f66c7c1ed0cd</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>b0c8b42e07a03010ec15f66c7c1ed0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <value>x_snc_blogging_post</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=78c8b42e07a03010ec15f66c7c1ed0cd"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>78c8b42e07a03010ec15f66c7c1ed0cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>7cc8b42e07a03010ec15f66c7c1ed0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current.post}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>78c8b42e07a03010ec15f66c7c1ed0cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>b8c8b42e07a03010ec15f66c7c1ed0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>78c8b42e07a03010ec15f66c7c1ed0cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>30c8b42e07a03010ec15f66c7c1ed0cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>likes={{1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</flow>
+        <order>5</order>
+        <parent_ui_id>5a7b75c0-9984-422c-beb4-8a85e68443ea</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>7cc8b42e07a03010ec15f66c7c1ed0d4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <ui_id>74783633-7503-4372-a087-06cc95128f61</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=7cc8b42e07a03010ec15f66c7c1ed0d4"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7cc8b42e07a03010ec15f66c7c1ed0d4</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>b8c8b42e07a03010ec15f66c7c1ed0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <value>100000</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=7cc8b42e07a03010ec15f66c7c1ed0d4"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>7cc8b42e07a03010ec15f66c7c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>74c8b42e07a03010ec15f66c7c1ed0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>comment={{Created_1.current.comment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>max_results</field>
+        <id>7cc8b42e07a03010ec15f66c7c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>b0c8b42e07a03010ec15f66c7c1ed0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table</field>
+        <id>7cc8b42e07a03010ec15f66c7c1ed0d4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>38c8b42e07a03010ec15f66c7c1ed0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{Created_1.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</flow>
+        <order>6</order>
+        <parent_ui_id>5a7b75c0-9984-422c-beb4-8a85e68443ea</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>b4c8b42e07a03010ec15f66c7c1ed0da</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <ui_id>f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=b4c8b42e07a03010ec15f66c7c1ed0da"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b4c8b42e07a03010ec15f66c7c1ed0da</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>fcc8b42e07a03010ec15f66c7c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <value>x_snc_blogging_comment</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=b4c8b42e07a03010ec15f66c7c1ed0da"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>b4c8b42e07a03010ec15f66c7c1ed0da</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>b8c8b42e07a03010ec15f66c7c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current.comment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>b4c8b42e07a03010ec15f66c7c1ed0da</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>f4c8b42e07a03010ec15f66c7c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>b4c8b42e07a03010ec15f66c7c1ed0da</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:07</sys_created_on>
+        <sys_id>7cc8b42e07a03010ec15f66c7c1ed0db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>likes={{74783633-7503-4372-a087-06cc95128f61.Count}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="DELETE" query="flow=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT IN7cc8b42e07a03010ec15f66c7c1ed0a3,e4c8b42e07a03010ec15f66c7c1ed09f"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">ffd778ea07a03010ec15f66c7c1ed005</block>
+        <comment/>
+        <connected_to>a2031fc7-ca58-4128-8814-67e44dd1160e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>7cc8b42e07a03010ec15f66c7c1ed0a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <ui_id>5a7b75c0-9984-422c-beb4-8a85e68443ea</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=7cc8b42e07a03010ec15f66c7c1ed0a3"/>
+    <sys_hub_flow_logic action="DELETE">
+        <block display_value="">7bd738ea07a03010ec15f66c7c1ed0fc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Comment Like Count">2cc8b42e07a03010ec15f66c7c1ed06c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>e4c8b42e07a03010ec15f66c7c1ed09f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <ui_id>a2031fc7-ca58-4128-8814-67e44dd1160e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="DELETE" query="document_key=e4c8b42e07a03010ec15f66c7c1ed09f"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e4c8b42e07a03010ec15f66c7c1ed09f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>70c8b42e07a03010ec15f66c7c1ed0a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <value>Is this a post</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=e4c8b42e07a03010ec15f66c7c1ed09f"/>
+    <sys_element_mapping action="DELETE">
+        <field>condition</field>
+        <id>e4c8b42e07a03010ec15f66c7c1ed09f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>fcc8b42e07a03010ec15f66c7c1ed0a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.post}}= </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>condition_name</field>
+        <id>e4c8b42e07a03010ec15f66c7c1ed09f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>3cc8b42e07a03010ec15f66c7c1ed0a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT IN28c8b42e07a03010ec15f66c7c1ed098,a0c8b42e07a03010ec15f66c7c1ed08e"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>28c8b42e07a03010ec15f66c7c1ed098</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:06</sys_created_on>
+        <sys_id>a0c8b42e07a03010ec15f66c7c1ed08e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</application>
+        <file_path/>
+        <instance_id>4d5617ccdb71dbc0cbf6d5b0cf9619b5</instance_id>
+        <instance_name>dev57421</instance_name>
+        <name>sys_hub_flow_e6b1b8a607a03010ec15f66c7c1ed099</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build&gt;glide-quebec-12-09-2020__patch1-02-18-2021&lt;/compiler_build&gt;&lt;copied_from&gt;566b8fcbdb36a010d620a08d139619bc&lt;/copied_from&gt;&lt;copied_from_name&gt;Like Count&lt;/copied_from_name&gt;&lt;description/&gt;&lt;internal_name&gt;comment_like_count&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.table_name","label":"6➛Comment Table","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.record","label":"6➛Comment Record","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Table","label":"5➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Records","label":"5➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Records","label":"2➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Table","label":"2➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.post","label":"Trigger➛Like Record➛Post","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"post"},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.record","label":"3➛Post Record","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.table_name","label":"3➛Post Table","reference":"x_snc_blogging_post","reference_display":"Post","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.comment","label":"Trigger➛Like Record➛Comment","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"comment"}]&lt;/label_cache&gt;&lt;latest_snapshot&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/latest_snapshot&gt;&lt;master_snapshot&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/master_snapshot&gt;&lt;name&gt;Comment Like Count&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id&gt;206c8f0fdb36a010d620a08d1396190e&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Comment Like Count&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Blogging" source="x_snc_blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_e6b1b8a607a03010ec15f66c7c1ed099&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:10&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e6b1b8a607a03010ec15f66c7c1ed099"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e6b1b8a607a03010ec15f66c7c1ed099"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="x_snc_blogging_like"&gt;^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;true&lt;/on_insert&gt;&lt;on_update&gt;false&lt;/on_update&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-14 18:48:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;206c8f0fdb36a010d620a08d1396190e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-14 18:48:10&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_blogging_like&lt;/table&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"table":"sys_trigger_runner_mapping","id":"55c8f42e07a03010ec15f66c7c1ed016","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}&lt;/data&gt;&lt;identifier&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/identifier&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:09&lt;/sys_created_on&gt;&lt;sys_id&gt;55c8f42e07a03010ec15f66c7c1ed016&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;206c8f0fdb36a010d620a08d1396190e&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_json_chunk action="INSERT_OR_UPDATE"&gt;&lt;data&gt;H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=&lt;/data&gt;&lt;document_id&gt;55c8f42e07a03010ec15f66c7c1ed016&lt;/document_id&gt;&lt;field&gt;trigger_runner&lt;/field&gt;&lt;length&gt;144&lt;/length&gt;&lt;position&gt;0&lt;/position&gt;&lt;source_table&gt;sys_trigger_runner_mapping&lt;/source_table&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:09&lt;/sys_created_on&gt;&lt;sys_id&gt;d9c8f42e07a03010ec15f66c7c1ed016&lt;/sys_id&gt;&lt;/sys_json_chunk&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN55c8f42e07a03010ec15f66c7c1ed016"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INbab1b8a607a03010ec15f66c7c1ed0da"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/flow&gt;&lt;name&gt;Created&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;bab1b8a607a03010ec15f66c7c1ed0da&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=bab1b8a607a03010ec15f66c7c1ed0da"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;bab1b8a607a03010ec15f66c7c1ed0da&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;3eb1b8a607a03010ec15f66c7c1ed0db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:24&lt;/sys_updated_on&gt;&lt;value&gt;^EQ&lt;/value&gt;&lt;variable display_value="Condition"&gt;66aadea0c31322002841b63b12d3aebf&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;bab1b8a607a03010ec15f66c7c1ed0da&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;b2b1b8a607a03010ec15f66c7c1ed0dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:24&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_blogging_like&lt;/value&gt;&lt;variable display_value="Table"&gt;cfca92e0c31322002841b63b12d3ae00&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;bab1b8a607a03010ec15f66c7c1ed0da&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;feb1b8a607a03010ec15f66c7c1ed0db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:24&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="Run flow In"&gt;3f1b9e4e0f103300b599bca2ff767e21&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INeeb1b8a607a03010ec15f66c7c1ed09b"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/id&gt;&lt;name&gt;Comment Like Count&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:22&lt;/sys_created_on&gt;&lt;sys_id&gt;eeb1b8a607a03010ec15f66c7c1ed09b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:22&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN3ab1b8a607a03010ec15f66c7c1ed0a9,a2b1b8a607a03010ec15f66c7c1ed0a2"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/model&gt;&lt;model_id&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;3ab1b8a607a03010ec15f66c7c1ed0a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/model&gt;&lt;model_id&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;a2b1b8a607a03010ec15f66c7c1ed0a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN33d778ea07a03010ec15f66c7c1ed00e,36b1b8a607a03010ec15f66c7c1ed0d0,76b1b8a607a03010ec15f66c7c1ed0d8,80e778ea07a03010ec15f66c7c1ed014"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/flow&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;5a7b75c0-9984-422c-beb4-8a85e68443ea&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;33d778ea07a03010ec15f66c7c1ed00e&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;74783633-7503-4372-a087-06cc95128f61&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=33d778ea07a03010ec15f66c7c1ed00e"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;33d778ea07a03010ec15f66c7c1ed00e&lt;/document_key&gt;&lt;order&gt;4&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;44e778ea07a03010ec15f66c7c1ed010&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:14&lt;/sys_updated_on&gt;&lt;value&gt;100000&lt;/value&gt;&lt;variable display_value="Max Results"&gt;4f400a1587003300663ca1bb36cb0b61&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=33d778ea07a03010ec15f66c7c1ed00e"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;33d778ea07a03010ec15f66c7c1ed00e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;00e778ea07a03010ec15f66c7c1ed010&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;comment={{Created_1.current.comment}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;max_results&lt;/field&gt;&lt;id&gt;33d778ea07a03010ec15f66c7c1ed00e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;4ce778ea07a03010ec15f66c7c1ed00f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;33d778ea07a03010ec15f66c7c1ed00e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;c0e778ea07a03010ec15f66c7c1ed010&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;{{Created_1.table_name}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/flow&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;36b1b8a607a03010ec15f66c7c1ed0d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;ui_id&gt;1a79d44f-bad1-4e50-a83a-522c72eedeb9&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=36b1b8a607a03010ec15f66c7c1ed0d0"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;36b1b8a607a03010ec15f66c7c1ed0d0&lt;/document_key&gt;&lt;order&gt;4&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;7ab1b8a607a03010ec15f66c7c1ed0d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:23&lt;/sys_updated_on&gt;&lt;value&gt;100000&lt;/value&gt;&lt;variable display_value="Max Results"&gt;4f400a1587003300663ca1bb36cb0b61&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=36b1b8a607a03010ec15f66c7c1ed0d0"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;36b1b8a607a03010ec15f66c7c1ed0d0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;36b1b8a607a03010ec15f66c7c1ed0d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:23&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;post={{Created_1.current.post}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;max_results&lt;/field&gt;&lt;id&gt;36b1b8a607a03010ec15f66c7c1ed0d0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;fab1b8a607a03010ec15f66c7c1ed0d2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:23&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;36b1b8a607a03010ec15f66c7c1ed0d0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;f6b1b8a607a03010ec15f66c7c1ed0d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:23&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;{{Created_1.table_name}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/flow&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;76b1b8a607a03010ec15f66c7c1ed0d8&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;95b4df94-9192-485e-8e47-c20aba86589f&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=76b1b8a607a03010ec15f66c7c1ed0d8"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;76b1b8a607a03010ec15f66c7c1ed0d8&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;36b1b8a607a03010ec15f66c7c1ed0da&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:24&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_blogging_post&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=76b1b8a607a03010ec15f66c7c1ed0d8"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;76b1b8a607a03010ec15f66c7c1ed0d8&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;feb1b8a607a03010ec15f66c7c1ed0d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:24&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Created_1.current.post}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;76b1b8a607a03010ec15f66c7c1ed0d8&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;3eb1b8a607a03010ec15f66c7c1ed0d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:24&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;76b1b8a607a03010ec15f66c7c1ed0d8&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:24&lt;/sys_created_on&gt;&lt;sys_id&gt;b2b1b8a607a03010ec15f66c7c1ed0da&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:24&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;likes={{1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/flow&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;5a7b75c0-9984-422c-beb4-8a85e68443ea&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;80e778ea07a03010ec15f66c7c1ed014&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=80e778ea07a03010ec15f66c7c1ed014"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;80e778ea07a03010ec15f66c7c1ed014&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;80e778ea07a03010ec15f66c7c1ed016&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:14&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_blogging_comment&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;80e778ea07a03010ec15f66c7c1ed014&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;cce778ea07a03010ec15f66c7c1ed015&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:35:50&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=80e778ea07a03010ec15f66c7c1ed014"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;80e778ea07a03010ec15f66c7c1ed014&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;88e778ea07a03010ec15f66c7c1ed015&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Created_1.current.comment}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;80e778ea07a03010ec15f66c7c1ed014&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;c4e778ea07a03010ec15f66c7c1ed015&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:14&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;80e778ea07a03010ec15f66c7c1ed014&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:14&lt;/sys_created_on&gt;&lt;sys_id&gt;4ce778ea07a03010ec15f66c7c1ed015&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:35:50&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;likes={{74783633-7503-4372-a087-06cc95128f61.Count}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INb7d738ea07a03010ec15f66c7c1ed0fd,b7d778ea07a03010ec15f66c7c1ed006"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;7bd738ea07a03010ec15f66c7c1ed0fc&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:13&lt;/sys_created_on&gt;&lt;sys_id&gt;b7d738ea07a03010ec15f66c7c1ed0fd&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;ui_id&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b7d738ea07a03010ec15f66c7c1ed0fd"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;b7d738ea07a03010ec15f66c7c1ed0fd&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:13&lt;/sys_created_on&gt;&lt;sys_id&gt;73d778ea07a03010ec15f66c7c1ed002&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:13&lt;/sys_updated_on&gt;&lt;value&gt;Is this a post&lt;/value&gt;&lt;variable display_value="Condition Label"&gt;f0af19c1c32632002841b63b12d3aea3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=b7d738ea07a03010ec15f66c7c1ed0fd"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;b7d738ea07a03010ec15f66c7c1ed0fd&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:13&lt;/sys_created_on&gt;&lt;sys_id&gt;ffd778ea07a03010ec15f66c7c1ed001&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:13&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{Created_1.current.post}}= &lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition_name&lt;/field&gt;&lt;id&gt;b7d738ea07a03010ec15f66c7c1ed0fd&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:13&lt;/sys_created_on&gt;&lt;sys_id&gt;3bd778ea07a03010ec15f66c7c1ed001&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:32:13&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;ffd778ea07a03010ec15f66c7c1ed005&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:32:13&lt;/sys_created_on&gt;&lt;sys_id&gt;b7d778ea07a03010ec15f66c7c1ed006&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:10&lt;/sys_updated_on&gt;&lt;ui_id&gt;5a7b75c0-9984-422c-beb4-8a85e68443ea&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b7d778ea07a03010ec15f66c7c1ed006"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT IN22b1b8a607a03010ec15f66c7c1ed0a8,3eb1b8a607a03010ec15f66c7c1ed0c6"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;22b1b8a607a03010ec15f66c7c1ed0a8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Blogging" source="x_snc_blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:23&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_e6b1b8a607a03010ec15f66c7c1ed099&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:05:23&lt;/sys_created_on&gt;&lt;sys_id&gt;3eb1b8a607a03010ec15f66c7c1ed0c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Blogging" source="x_snc_blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:05:23&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=e6b1b8a607a03010ec15f66c7c1ed099^sys_idNOT INddc8f42e07a03010ec15f66c7c1ed016"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.OncePerRecord&lt;/binding_strategy&gt;&lt;plan/&gt;&lt;plan_id&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/plan_id&gt;&lt;snapshot&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ddc8f42e07a03010ec15f66c7c1ed016&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;206c8f0fdb36a010d620a08d1396190e&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;comment_like_count&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.table_name","label":"6➛Comment Table","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff.record","label":"6➛Comment Record","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Count","label":"5➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Table","label":"5➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"74783633-7503-4372-a087-06cc95128f61.Records","label":"5➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Records","label":"2➛Like Records","reference":"x_snc_blogging_like","reference_display":"Like","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Table","label":"2➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count","label":"2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger➛Like Table","reference":"x_snc_blogging_like","reference_display":"Like","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.post","label":"Trigger➛Like Record➛Post","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"post"},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.record","label":"3➛Post Record","reference":"x_snc_blogging_post","reference_display":"Post","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95b4df94-9192-485e-8e47-c20aba86589f.table_name","label":"3➛Post Table","reference":"x_snc_blogging_post","reference_display":"Post","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.comment","label":"Trigger➛Like Record➛Comment","reference":"x_snc_blogging_comment","reference_display":"Comment","type":"reference","base_type":"reference","parent_table_name":"x_snc_blogging_like","column_name":"comment"}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Comment Like Count&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Comment Like Count"&gt;e6b1b8a607a03010ec15f66c7c1ed099&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:05&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=2cc8b42e07a03010ec15f66c7c1ed06c"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=2cc8b42e07a03010ec15f66c7c1ed06c"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT INf0c8b42e07a03010ec15f66c7c1ed0dc"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/flow&gt;&lt;name&gt;Created&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;f0c8b42e07a03010ec15f66c7c1ed0dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:09&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f0c8b42e07a03010ec15f66c7c1ed0dc"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;f0c8b42e07a03010ec15f66c7c1ed0dc&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;70c8b42e07a03010ec15f66c7c1ed0de&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_blogging_like&lt;/value&gt;&lt;variable display_value="Table"&gt;cfca92e0c31322002841b63b12d3ae00&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;f0c8b42e07a03010ec15f66c7c1ed0dc&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;bcc8b42e07a03010ec15f66c7c1ed0dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="Run flow In"&gt;3f1b9e4e0f103300b599bca2ff767e21&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;f0c8b42e07a03010ec15f66c7c1ed0dc&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;f8c8b42e07a03010ec15f66c7c1ed0dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;value&gt;^EQ&lt;/value&gt;&lt;variable display_value="Condition"&gt;66aadea0c31322002841b63b12d3aebf&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT INe0c8b42e07a03010ec15f66c7c1ed06e"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/id&gt;&lt;name&gt;Comment Like Count&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:05&lt;/sys_created_on&gt;&lt;sys_id&gt;e0c8b42e07a03010ec15f66c7c1ed06e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:05&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT INa8c8b42e07a03010ec15f66c7c1ed06f,e0c8b42e07a03010ec15f66c7c1ed092"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/model&gt;&lt;model_id&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:05&lt;/sys_created_on&gt;&lt;sys_id&gt;a8c8b42e07a03010ec15f66c7c1ed06f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:05&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/model&gt;&lt;model_id&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e0c8b42e07a03010ec15f66c7c1ed092&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT IN78c8b42e07a03010ec15f66c7c1ed0ad,78c8b42e07a03010ec15f66c7c1ed0cd,7cc8b42e07a03010ec15f66c7c1ed0d4,b4c8b42e07a03010ec15f66c7c1ed0da"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/flow&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;78c8b42e07a03010ec15f66c7c1ed0ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;1a79d44f-bad1-4e50-a83a-522c72eedeb9&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=78c8b42e07a03010ec15f66c7c1ed0ad"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;78c8b42e07a03010ec15f66c7c1ed0ad&lt;/document_key&gt;&lt;order&gt;4&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;b4c8b42e07a03010ec15f66c7c1ed0af&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;value&gt;100000&lt;/value&gt;&lt;variable display_value="Max Results"&gt;4f400a1587003300663ca1bb36cb0b61&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=78c8b42e07a03010ec15f66c7c1ed0ad"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;78c8b42e07a03010ec15f66c7c1ed0ad&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;70c8b42e07a03010ec15f66c7c1ed0af&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;post={{Created_1.current.post}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;max_results&lt;/field&gt;&lt;id&gt;78c8b42e07a03010ec15f66c7c1ed0ad&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;bcc8b42e07a03010ec15f66c7c1ed0ae&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;78c8b42e07a03010ec15f66c7c1ed0ad&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;34c8b42e07a03010ec15f66c7c1ed0af&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;{{Created_1.table_name}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/flow&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;78c8b42e07a03010ec15f66c7c1ed0cd&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;95b4df94-9192-485e-8e47-c20aba86589f&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=78c8b42e07a03010ec15f66c7c1ed0cd"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;78c8b42e07a03010ec15f66c7c1ed0cd&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b0c8b42e07a03010ec15f66c7c1ed0cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_blogging_post&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=78c8b42e07a03010ec15f66c7c1ed0cd"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;78c8b42e07a03010ec15f66c7c1ed0cd&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;7cc8b42e07a03010ec15f66c7c1ed0ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Created_1.current.post}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;78c8b42e07a03010ec15f66c7c1ed0cd&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b8c8b42e07a03010ec15f66c7c1ed0ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;78c8b42e07a03010ec15f66c7c1ed0cd&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;30c8b42e07a03010ec15f66c7c1ed0cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;likes={{1a79d44f-bad1-4e50-a83a-522c72eedeb9.Count}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;43400a1587003300663ca1bb36cb0b4b&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/flow&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;5a7b75c0-9984-422c-beb4-8a85e68443ea&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;7cc8b42e07a03010ec15f66c7c1ed0d4&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;74783633-7503-4372-a087-06cc95128f61&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7cc8b42e07a03010ec15f66c7c1ed0d4"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;7cc8b42e07a03010ec15f66c7c1ed0d4&lt;/document_key&gt;&lt;order&gt;4&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b8c8b42e07a03010ec15f66c7c1ed0d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;value&gt;100000&lt;/value&gt;&lt;variable display_value="Max Results"&gt;4f400a1587003300663ca1bb36cb0b61&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=7cc8b42e07a03010ec15f66c7c1ed0d4"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;7cc8b42e07a03010ec15f66c7c1ed0d4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;74c8b42e07a03010ec15f66c7c1ed0d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;comment={{Created_1.current.comment}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;max_results&lt;/field&gt;&lt;id&gt;7cc8b42e07a03010ec15f66c7c1ed0d4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b0c8b42e07a03010ec15f66c7c1ed0d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table&lt;/field&gt;&lt;id&gt;7cc8b42e07a03010ec15f66c7c1ed0d4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;38c8b42e07a03010ec15f66c7c1ed0d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b&lt;/table&gt;&lt;value&gt;{{Created_1.table_name}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/flow&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;5a7b75c0-9984-422c-beb4-8a85e68443ea&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b4c8b42e07a03010ec15f66c7c1ed0da&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;ui_id&gt;f79f4aad-9b5f-4adc-8a71-eb7fbcfcfeff&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=b4c8b42e07a03010ec15f66c7c1ed0da"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;b4c8b42e07a03010ec15f66c7c1ed0da&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;fcc8b42e07a03010ec15f66c7c1ed0db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;value&gt;x_snc_blogging_comment&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=b4c8b42e07a03010ec15f66c7c1ed0da"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;b4c8b42e07a03010ec15f66c7c1ed0da&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;b8c8b42e07a03010ec15f66c7c1ed0db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Created_1.current.comment}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;b4c8b42e07a03010ec15f66c7c1ed0da&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;f4c8b42e07a03010ec15f66c7c1ed0db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;b4c8b42e07a03010ec15f66c7c1ed0da&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:07&lt;/sys_created_on&gt;&lt;sys_id&gt;7cc8b42e07a03010ec15f66c7c1ed0db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:07&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;likes={{74783633-7503-4372-a087-06cc95128f61.Count}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT IN7cc8b42e07a03010ec15f66c7c1ed0a3,e4c8b42e07a03010ec15f66c7c1ed09f"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;ffd778ea07a03010ec15f66c7c1ed005&lt;/block&gt;&lt;comment/&gt;&lt;connected_to&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;7cc8b42e07a03010ec15f66c7c1ed0a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;5a7b75c0-9984-422c-beb4-8a85e68443ea&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7cc8b42e07a03010ec15f66c7c1ed0a3"/&gt;&lt;sys_hub_flow_logic action="INSERT_OR_UPDATE"&gt;&lt;block display_value=""&gt;7bd738ea07a03010ec15f66c7c1ed0fc&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;decision_table_inputs/&gt;&lt;display_text/&gt;&lt;extended_inputs/&gt;&lt;flow display_value="Comment Like Count"&gt;2cc8b42e07a03010ec15f66c7c1ed06c&lt;/flow&gt;&lt;flow_variable/&gt;&lt;flow_variables_assigned/&gt;&lt;inputs/&gt;&lt;inputs/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;outputs_to_assign/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e4c8b42e07a03010ec15f66c7c1ed09f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;a2031fc7-ca58-4128-8814-67e44dd1160e&lt;/ui_id&gt;&lt;workflow_inputs/&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e4c8b42e07a03010ec15f66c7c1ed09f"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_flow_logic&lt;/document&gt;&lt;document_key&gt;e4c8b42e07a03010ec15f66c7c1ed09f&lt;/document_key&gt;&lt;order&gt;10&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;70c8b42e07a03010ec15f66c7c1ed0a3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;value&gt;Is this a post&lt;/value&gt;&lt;variable display_value="Condition Label"&gt;f0af19c1c32632002841b63b12d3aea3&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=e4c8b42e07a03010ec15f66c7c1ed09f"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition&lt;/field&gt;&lt;id&gt;e4c8b42e07a03010ec15f66c7c1ed09f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;fcc8b42e07a03010ec15f66c7c1ed0a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value&gt;{{Created_1.current.post}}= &lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;condition_name&lt;/field&gt;&lt;id&gt;e4c8b42e07a03010ec15f66c7c1ed09f&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;3cc8b42e07a03010ec15f66c7c1ed0a2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c^sys_idNOT IN28c8b42e07a03010ec15f66c7c1ed098,a0c8b42e07a03010ec15f66c7c1ed08e"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;28c8b42e07a03010ec15f66c7c1ed098&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Blogging" source="x_snc_blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_2cc8b42e07a03010ec15f66c7c1ed06c&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-07 18:36:06&lt;/sys_created_on&gt;&lt;sys_id&gt;a0c8b42e07a03010ec15f66c7c1ed08e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Blogging" source="x_snc_blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Blogging"&gt;d2d804e6dbf62010d620a08d139619f8&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-07 18:36:06&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1359774798</payload_hash>
+        <record_name>Comment Like Count</record_name>
+        <reverted_from/>
+        <source>211ccce607203010ec15f66c7c1ed097</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 18:36:12</sys_created_on>
+        <sys_id>4ec8f42e07a03010ec15f66c7c1ed0e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>179e7c2c58d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 18:36:12</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>46c8f42e84a03010b19d11648574c7e3</update_guid>
+        <update_guid_history>46c8f42e84a03010b19d11648574c7e3:-1359774798,d4c8b42e57a0301034384ac49664ea3c:-792185004,70b8342e1fa03010937064cc4d3194f6:-1886297653,d0e778eadea03010b1bb32680210f747:1899222476,8bb1b8a603a030106ef8eaaa3f97b8f3:1522387182,eab1b8a632a03010c0e85427e16eee9f:1929327780</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 20:47:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>0fd2868bcccc4e7e88f472c003be3804</sys_id>
+        <sys_metadata>e6b1b8a607a03010ec15f66c7c1ed099</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Comment Like Count</sys_name>
+        <sys_package display_value="Blogging" source="x_snc_blogging">d2d804e6dbf62010d620a08d139619f8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blogging">d2d804e6dbf62010d620a08d139619f8</sys_scope>
+        <sys_scope_delete display_value="">526084bef0d146aa9a385dd4ff324889</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_e6b1b8a607a03010ec15f66c7c1ed099</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_e6b1b8a607a03010ec15f66c7c1ed099">4ec8f42e07a03010ec15f66c7c1ed0e3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 20:47:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

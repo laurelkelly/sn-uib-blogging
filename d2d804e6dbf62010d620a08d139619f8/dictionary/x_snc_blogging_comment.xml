@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Comment" max_length="40" name="x_snc_blogging_comment" sizeclass="13" type="collection">
+    <element label="Comment" max_length="40" name="x_snc_blogging_comment" sizeclass="17" type="collection">
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Author" max_length="32" name="author" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" label="Comment" max_length="1000" name="comment" type="html"/>
+        <element label="Likes" max_length="40" name="likes" type="integer"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Post" max_length="32" name="post" reference="x_snc_blogging_post" type="reference"/>
         <index name="index">
